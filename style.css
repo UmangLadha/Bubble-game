@@ -69,7 +69,7 @@ body h1{
 	display: flex;
 	gap: 10px;
 	flex-wrap: wrap;
-	overflow-x: scroll;
+	/* overflow-x: scroll; */
 	padding: 10px;
 	/* background-color: blackS; */
 }

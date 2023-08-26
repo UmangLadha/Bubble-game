@@ -1,6 +1,7 @@
 let count = "";
-for(i = 1 ; i<=120; i++){
-	count += `<div id="bubble">${Math.floor(Math.random()*10)}</div>`;
+for(i = 1 ; i<=168; i++){
+	let bn = Math.floor(Math.random()*10)
+	count += `<div id="bubble">${bn}</div>`;
 }
 
 let output = document.querySelector("#pbtm");
