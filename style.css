@@ -3,7 +3,7 @@
 	margin: 0;
 	padding: 0;
 	font-family: Georgia, 'Times New Roman', Times, serif;
-	/* text-align: center; */
+	text-align: center;
 }
 
 html, body{
@@ -11,8 +11,11 @@ html, body{
 	height: 100%;
 }
 
-body h1{
+.heading{
 	padding: 20px;
+	color: rgb(27, 79, 27);
+	background-color: rgb(150, 211, 150)
+
 }
 
 #main{
@@ -26,8 +29,8 @@ body h1{
 
 #panel{
 	overflow: hidden;
-	width: 80%;
-	height: 80%;
+	width: 60%;
+	height: 90%;
 	border-radius: 10px;
 	background-color: white;
 }
@@ -67,9 +70,11 @@ body h1{
 	height: calc(100% - 80px);
 	gap: 10px;
 	display: flex;
+	justify-content: center;
+	align-items: center;
 	gap: 10px;
 	flex-wrap: wrap;
-	/* overflow-x: scroll; */
+	overflow-x: hidden;
 	padding: 10px;
 	/* background-color: blackS; */
 }
@@ -93,3 +98,20 @@ body h1{
 	cursor: pointer;
 }
 
+@media only screen and (max-width : 600px){ 
+	#panel{
+		width: 90%;
+	}
+
+	#ptop{
+		padding: 0 15px;
+        justify-content: space-evenly;
+		gap: 5px
+		;
+	}
+	
+	.elem{
+		width: auto;
+		gap: 5px
+	}
+}
